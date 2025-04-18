@@ -45,4 +45,4 @@ if st.session_state['todos']:
         col1.checkbox("", value=todo.done, key=f"done_{i}", on_change=toggle_done, args=(i, ))
         col2.markdown(f'~~{todo.task}~~' if todo.done else todo.task)
 else:
-    st.info('할일을 추가해보세요😊')
+    st.info('할일을 추가해요')
